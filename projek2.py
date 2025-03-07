@@ -1,7 +1,5 @@
 import streamlit as st
 
-
-
 st.sidebar.title("TAHAPAN FIVES")
 st.markdown("""
     <style>
@@ -303,6 +301,8 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan1/'+nim ), {{
+                indikator: "Fakta",
+                soal:"1. Silakan tuliskan hal-hal penting yang terdapat dalam teks bacaan, pada kolom berikut! (siapkan beberapa kolom untuk para siswa menuliskan hal-hal penting dari bacaan) ",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -385,6 +385,8 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan2/'+nim ), {{
+                indikator: "Fakta",
+                soal:"2. Membahas fakta-fakta penting (Guru dan Siswa membahas fakta-fakta penting yang terdapat dalam teks bacaan. Mulailah dari tingkatan domain Taksonomi kemampuan berpikir dalam menuliskan fakta dari teks bacaan.",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -466,6 +468,8 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan3/'+nim ), {{
+                indikator: "Fakta",
+                soal:"3. Lengkapi teks dengan video singkat atau slide-slide yang menunjang teks tersebut ",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -546,6 +550,8 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan4/'+nim ), {{
+                indikator: "Fakta",
+                soal:"4. Melakukan tanya jawab mengenai fakta-fakta dalam tayangan media tambahan.",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -627,6 +633,8 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan5/'+nim ), {{
+                indikator: "Fakta",
+                soal:"5. Memberikan contoh fakta-fakta faktual dari bacaan dikaitkan dengan hal-hal yang diketahui siswa.",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -707,6 +715,8 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan6/'+nim ), {{
+                indikator: "Fakta",
+                soal:"6. Mintalah siswa menyampaikan fakta-fakta yang ditemukannya",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -792,6 +802,8 @@ if st.sidebar.button("2. INFERENCES/SIMPULAN",icon='📖',use_container_width=Tr
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan7/'+nim ), {{
+                indikator: "Simpulan",
+                soal:"1. Tanya jawab mengenai isi bacaan, menggunakan petunjuk atau kata-kata kunci dalam teks dan menggunakannya untuk memberikan jawaban atas pertanyaan-pertanyaan pada tanya jawab",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -873,6 +885,8 @@ if st.sidebar.button("2. INFERENCES/SIMPULAN",icon='📖',use_container_width=Tr
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan8/'+nim ), {{
+                indikator: "Simpulan",
+                soal:"2. Menghubungkan latar belakang pengetahuan siswa dengan informasi yang ada dalam teks bacaan",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -955,6 +969,8 @@ if st.sidebar.button("2. INFERENCES/SIMPULAN",icon='📖',use_container_width=Tr
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan9/'+nim ), {{
+                indikator: "Simpulan",
+                soal:"3. Berdasarkan fakta-fakta yang telah ditulis, siswa diajak untuk mencoba menyimpulkan isi bacaan secara implisit/tersirat. Kegiatan menyimpulkan berdasarkan: Inference = tc/ teks dalam buku + (pengalaman + pengetahuan siswa)",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -1038,6 +1054,8 @@ if st.sidebar.button("2. INFERENCES/SIMPULAN",icon='📖',use_container_width=Tr
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan10/'+nim ), {{
+                indikator: "Simpulan",
+                soal:"4. Siswa menyimpulkan isi teks bacaan dengan cara mengaitkan isi teks dengan pengalaman dan pengetahun siswa yang telah dimiliki, dengan menggunakan bahasa siswa sendiri.",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -1120,6 +1138,8 @@ if st.sidebar.button("2. INFERENCES/SIMPULAN",icon='📖',use_container_width=Tr
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan11/'+nim ), {{
+                indikator: "Simpulan",
+                soal:"5. Menyimpulkan isi bacaan dapat dilakukan dengan cara berkolaborasi dalam kelompok dengan dipandu oleh lembar kerja",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -1202,6 +1222,8 @@ if st.sidebar.button("2. INFERENCES/SIMPULAN",icon='📖',use_container_width=Tr
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan12/'+nim ), {{
+                indikator: "Simpulan",
+                soal:"6. Siswa mempresentasikan hasil menyimpulkan teks bacaan, baik secara individu maupun kelompok",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
@@ -1371,11 +1393,15 @@ if st.sidebar.button("EXPERIENCE/PENGALAMAN",icon='📖',use_container_width=Tru
             const nama = document.getElementById("idnama").value
             const nim = document.getElementById("idnim").value
             set(ref(db, 'masukan13/'+nim ), {{
+                indikator: "Pengalaman",
+                soal: "1. Isi Informasi dalam Teks",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk1").value
             }})
             set(ref(db, 'masukan14/'+nim ), {{
+                indikator: "Pengalaman",
+                soal: "2. yang diingat oleh saya",
                 nama: nama,
                 nim: nim,
                 tulisan: document.getElementById("masuk2").value
