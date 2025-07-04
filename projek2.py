@@ -23,7 +23,7 @@ st.markdown("""
     #judul{
         font-size:30px;
         font-weight:bold;
-        font-family:broadway;
+        font-family:Times New Roman;
         color:blue;
     }
     div.st-key-coba button:hover {
@@ -67,7 +67,7 @@ st.markdown("""
             color:white;
     }
     .isi{
-        font-family:"comic sans ms";
+        font-family:"Times New Roman";
         font-size:16px;
         text-align:justify;
         border-radius:10px;
@@ -81,7 +81,7 @@ st.markdown("""
         background-color:white;
     }
     .isian{
-        font-family:"cooper black";
+        font-family:"Times New Roman";
         border:2px solid black;
         border-radius:0px 10px 0px 10px;
         background-color:cyan;
@@ -198,7 +198,7 @@ st.session_state.nama = st.sidebar.text_input("Masukan Nama Anda",value = st.ses
 st.session_state.NIM = st.sidebar.text_input("Masukan Nim Anda", value = st.session_state.NIM)
 if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba"):
     st.markdown("<div class='judul2'>FACT</div>",unsafe_allow_html=True)
-    tab = st.tabs(["1. Membaca Teks","2. Tuliskan","3. Membahas", "4. Teks dan Video","5. tanya jawab","6. contoh fakta-fakta", "7. menyampaikan"])
+    tab = st.tabs(["1. Membaca Teks","2. Contoh Fakta-fakta","3. Tanya Jawab", "4. Menyampaikan","5. Membahas","6. Penguatan (Teks dan Video)", "7. Tuliskan"])
     with tab[0]:
         st.markdown("<div id='judul'>Manfaat Energi Listrik Dalam Kehidupan</div>",unsafe_allow_html=True)
         st.markdown("""<div class='isi'>
@@ -237,7 +237,7 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
     peralatan elektronik yang menggunakan listrik juga dapat meningkatkan efisiensi dalam 
     berbagai aspek kehidupan, seperti pengolahan makanan dan pengolahan data.
     </div>""",unsafe_allow_html=True)
-    with tab[1]:
+    with tab[6]:
         st.markdown("""<div class='isian'>
     Silakan tuliskan hal-hal penting yang terdapat dalam teks bacaan, pada kolom berikut!
     (siapkan beberapa kolom untuk para siswa menuliskan hal-hal penting dari bacaan)
@@ -266,13 +266,13 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
             </style>
         </head>
         <body>
-        <div id="komentar" style="color:red; font-family:'snap itc';font-size:18px">Masukan Jawaban</div>
+        <div id="komentar" style="color:red; font-family:'Times New Roman';font-size:18px">Masukan Jawaban</div>
         <div style="margin:5px">
-            <label for="nama" style="font-family:'comic sans ms';font-weight:bold">Nama: </label>
+            <label for="nama" style="font-family:'Times New Roman';font-weight:bold">Nama: </label>
             <input type="text" id="idnama" name="nama" value={st.session_state.nama}>
         </div>
         <div style="margin:5px">
-            <label for="nim" style="font-family:'comic sans ms';font-weight:bold">NIM: </label>
+            <label for="nim" style="font-family:'Times New Roman';font-weight:bold">NIM: </label>
             <input type="text" id="idnim" name="nim" value={st.session_state.NIM}>
         </div>
         <textarea name="masuk1" id="masuk1" rows="8" cols="50"></textarea><br>
@@ -320,7 +320,7 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
         </body>
         </html>
         """,height=1000)        
-    with tab[2]:
+    with tab[4]:
         st.markdown("""<div class='isian'>
     Membahas fakta-fakta penting (Guru dan Siswa membahas fakta-fakta penting yang terdapat 
     dalam teks bacaan. Mulailah dari tingkatan domain Taksonomi kemampuan berpikir dalam 
@@ -339,7 +339,7 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
                     margin:5px;
                 }}
                 #kirim{{
-                    font-family:'brush script mt';
+                    font-family:'Times New Roman';
                     font-size:12px;
                     padding:3px;
                     margin:5px;
@@ -405,7 +405,7 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
         </html>
         """,height=1000)  
         
-    with tab[3]:
+    with tab[5]:
         st.markdown("""<div class='isian'>
     Lengkapi teks dengan video singkat atau slide-slide yang menunjang teks tersebut
     </div>""",unsafe_allow_html=True)
@@ -487,7 +487,7 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
         </body>
         </html>
         """,height=1000)  
-    with tab[4]:
+    with tab[2]:
         st.markdown("""<div class='isian'>
     Melakukan tanya jawab mengenai fakta-fakta dalam tayangan media tambahan. 
     </div>""",unsafe_allow_html=True)
@@ -569,7 +569,7 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
         </body>
         </html>
         """,height=1000)  
-    with tab[5]:
+    with tab[1]:
         st.markdown("""<div class='isian'>
     Memberikan contoh fakta-fakta faktual dari bacaan dikaitkan dengan 
     hal-hal yang diketahui siswa. 
@@ -652,7 +652,7 @@ if st.sidebar.button("FACT/FAKTA",icon='📖',use_container_width=True,key="coba
         </body>
         </html>
         """,height=1000)  
-    with tab[6]:
+    with tab[3]:
         st.markdown("""<div class='isian'>
     Mintalah siswa menyampaikan fakta-fakta yang ditemukannya 
     </div>""",unsafe_allow_html=True)
