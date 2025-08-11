@@ -75,10 +75,12 @@ st.markdown("""
         background-color:pink;
         padding:5px;
         text-indent:40px;
-        margin:10px
+        margin:10px;
+        color:black;
     }
     .isi:hover{
         background-color:white;
+        color:blue;
     }
     .isian{
         font-family:"Times New Roman";
@@ -184,6 +186,27 @@ st.markdown("""
         border:2px solid black;
         font-family:"commic sans ms";
         font-size:20px;
+    }
+    svg.e14lo1l1{
+        background-color:black;
+        width:25px;
+        height:25px;
+        border:2px solid yellow;
+        border-radius:4px;
+        display:block;
+    }
+    svg.e14lo1l1:hover{
+        background-color: blue;
+    }
+    div[data-testid="stMarkdownContainer"]>p{
+        color:black;
+    }
+    div.st-emotion-cache-1qrd9al>p{
+        color:black;
+    }
+    div.st-emotion-cache-1vsah7k>p{
+        color:white;
+        background-color:black;
     }
     </style>
     """, unsafe_allow_html=True)
@@ -1443,3 +1466,4 @@ if st.sidebar.button("SUMMARY/RINGKASAN",icon='📖',use_container_width=True,ke
             </ol>
         </div>
         """,unsafe_allow_html=True)
+
