@@ -187,7 +187,7 @@ st.markdown("""
         font-family:"commic sans ms";
         font-size:20px;
     }
-    button.[data-testid="stBaseButton-headerNoPadding"]{
+    button[data-testid="stBaseButton-headerNoPadding"]{
         background-color:black;
         width:25px;
         height:25px;
@@ -1466,6 +1466,7 @@ if st.sidebar.button("SUMMARY/RINGKASAN",icon='📖',use_container_width=True,ke
             </ol>
         </div>
         """,unsafe_allow_html=True)
+
 
 
 
