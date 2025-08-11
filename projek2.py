@@ -198,6 +198,9 @@ st.markdown("""
     button.e7nj0r41:hover{
         background-color: blue;
     }
+    button.e7nj0r41 span{
+        color:white;
+    }
     div[data-testid="stMarkdownContainer"]>p{
         color:black;
     }
@@ -1466,6 +1469,7 @@ if st.sidebar.button("SUMMARY/RINGKASAN",icon='📖',use_container_width=True,ke
             </ol>
         </div>
         """,unsafe_allow_html=True)
+
 
 
 
