@@ -187,7 +187,7 @@ st.markdown("""
         font-family:"commic sans ms";
         font-size:20px;
     }
-    button.e7njor415{
+    button.e7nj0r415{
         background-color:black;
         width:25px;
         height:25px;
@@ -195,7 +195,7 @@ st.markdown("""
         border-radius:4px;
         display:block;
     }
-    button.e7njor415:hover{
+    button.e7nj0r415:hover{
         background-color: blue;
     }
     div[data-testid="stMarkdownContainer"]>p{
@@ -1466,5 +1466,6 @@ if st.sidebar.button("SUMMARY/RINGKASAN",icon='📖',use_container_width=True,ke
             </ol>
         </div>
         """,unsafe_allow_html=True)
+
 
 
